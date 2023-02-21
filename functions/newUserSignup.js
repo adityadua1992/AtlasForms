@@ -10,6 +10,7 @@ exports = async function (authEvent) {
     isSuperUser = true
   }
 
+  // Test
   // TODO - figure out what those permissions look like
   newuser = { _id: authEvent.user.id, ...authEvent.user, createdate: authEvent.time, isSuperUser, permissions: [{ item: '', permissions: '' }] }
   delete newuser.id // Moved into _id
